@@ -1,4 +1,5 @@
 # lesson 1 总结
+[预览地址](http://htmlpreview.github.io/?https://github.com/rocwangv/html5-learning/blob/master/lesson1/index.html)
 * 设置背景图片：
 ```css
 background:url(pic.jpg) center center;
