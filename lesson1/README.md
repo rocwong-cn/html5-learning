@@ -32,11 +32,13 @@ html,body{
 }
 ```
 * 外部样式文件
+
 一般的，我们会在css文件首行增加字符集设置：
 ```css
 @charset "UTF-8";
 ```
 * 事件拦截
+
 通过获取到事件回调的`e`事件对象，来拦截事件响应：
 ```js
 function onclick(e){
@@ -45,6 +47,7 @@ function onclick(e){
 }
 ```
 * 移动端适配
+
 在`head`中增加：
 ```html
 <meta name="viewport"
