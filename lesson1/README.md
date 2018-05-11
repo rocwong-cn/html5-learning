@@ -1,19 +1,22 @@
 # lesson 1 总结
 [预览地址](http://htmlpreview.github.io/?https://github.com/rocwangv/html5-learning/blob/master/lesson1/index.html)
-* 设置背景图片：
+## 设置背景图片：
+
 ```css
 background:url(pic.jpg) center center;
 background-size:cover;
 ```
 > background: #00FF00 url(bgimage.gif) no-repeat fixed top;
-* transform
+
+## transform
 
 通过设置`translateY`的值来定位元素在Y轴的位置，如：
+
 ```css
 transform:translateY(-50%);
 ```
 
-* text-transform
+## text-transform
 
 | 值                    | 描述
 | ----------------------- |:-------
@@ -23,7 +26,7 @@ transform:translateY(-50%);
 | lowercase      | 定义无大写字母，仅有小写字母。    
 | inherit      | 规定应该从父元素继承 text-transform 属性的值。    
 
-* 清除默认间距
+## 清除默认间距
 
 浏览器会对页面元素有默认的间距值，为了清除它们，一般做法是：
 ```css
@@ -32,13 +35,14 @@ html,body{
     padding: 0;
 }
 ```
-* 外部样式文件
+## 外部样式文件
 
 一般的，我们会在css文件首行增加字符集设置：
+
 ```css
 @charset "UTF-8";
 ```
-* 事件拦截
+## 事件拦截
 
 通过获取到事件回调的`e`事件对象，来拦截事件响应：
 ```js
@@ -47,9 +51,10 @@ function onclick(e){
     //TODO
 }
 ```
-* 移动端适配
+## 移动端适配
 
 在`head`中增加：
+
 ```html
 <meta name="viewport"
           content="width=device-width, initial-scale=1.0, shrink-to-fit=no,user-scalable=yes,maximum-scale=1.0">
