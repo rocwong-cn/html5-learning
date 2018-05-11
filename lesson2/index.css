@@ -1,4 +1,4 @@
 @charset "UTF-8";
 html, body {
-    background: green;
+    background: green; /** 可以通过修改色值和来观察manifest对页面的缓存效果 **/
 }
