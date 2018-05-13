@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson 4</title>
+    <style>
+        body {
+            position: relative;
+            width: 1200px;
+            height: 600px;
+        }
+
+        #logo {
+            width: 300px;
+            height: 200px;
+            background: url(logo-mask.png) center 50% no-repeat;
+            position: absolute;
+            left: 0;
+        }
+
+        #box {
+            width: 300px;
+            height: 200px;
+            background: #d4efdf;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            border: 5px dashed #27ae60;
+            position: absolute;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="logo"></div>
+<div id="box"></div>
+
+<script>
+    var logo = document.getElementById('logo');
+    logo.draggable = true;
+
+    var box = document.getElementById('box');
+    var body = document.getElementsByTagName('body')[0];
+
+    box.ondragover = function (e) {
+        e.preventDefault();
+    };
+    box.ondrop = function (e) {
+        window.event ? e.cancelBubble = true : e.stopPropagation();
+        box.appendChild(logo);
+    };
+
+    body.ondragover = function (e) {
+        e.preventDefault()
+    };
+    body.ondrop = function (e) {
+        body.appendChild(logo);
+    };
+
+</script>
+</body>
+</html>
