@@ -3,8 +3,8 @@
 > 本节课主要学习是布局相关知识。
 
 [两列均分布局](http://htmlpreview.github.io/?https://github.com/rocwangv/html5-learning/blob/master/lesson6/index.html)
-[格子布局](http://htmlpreview.github.io/?https://github.com/rocwangv/html5-learning/blob/master/lesson6/grid.html)
-[格子布局 - 跨行](http://htmlpreview.github.io/?https://github.com/rocwangv/html5-learning/blob/master/lesson6/grid1.html)
+| [格子布局](http://htmlpreview.github.io/?https://github.com/rocwangv/html5-learning/blob/master/lesson6/grid.html)
+| [格子布局 - 跨行](http://htmlpreview.github.io/?https://github.com/rocwangv/html5-learning/blob/master/lesson6/grid1.html)
 
 
 ## 清除浮动
