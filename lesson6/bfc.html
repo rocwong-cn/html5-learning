@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Example</title>
+    <style type="text/css">
+        body {
+            background: #FFF;
+            margin: 50px;
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        }
+
+        p {
+            font-size: 36px;
+        }
+
+        img {
+            float: left;
+            margin-right: 30px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>P标签未设置overflow:hidden</h2>
+<img src="images/head1.png" alt="penguin">
+<img src="images/head2.png" alt="button">
+<p>With no change in the rule, the more you grow the more envious you become, the other courtiers like Rama Raja
+    Bhushana were against the growth of Ramalinga’s association with the King Rayalu. Whenever there is a possibility,
+    those courtiers, and Rama Raja Bhushana had been working out for damaging Ramalinga’s image and sling mud on him
+    before the King. </p>
+------------------------------------------------------------ 分割线 ------------------------------------------------------------
+<h2>P标签设置overflow:hidden，触发了BFC机制，P标签内的元素会沿着P标签边框显示</h2>
+<img src="images/head1.png" alt="penguin">
+<img src="images/head2.png" alt="button">
+<p style="overflow: hidden">With no change in the rule, the more you grow the more envious you become, the other
+    courtiers like Rama Raja Bhushana were against the growth of Ramalinga’s association with the King Rayalu. Whenever
+    there is a possibility, those courtiers, and Rama Raja Bhushana had been working out for damaging Ramalinga’s image
+    and sling mud on him before the King. </p>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson 6</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        section {
+            width: 100%;
+            min-width: 500px;
+            background: #f5f5f5;
+            -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .4) inset;
+            -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .4) inset;
+            box-shadow: 0 0 1px rgba(0, 0, 0, .4) inset;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+        }
+
+        section::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        article {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 50%;
+            -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .4) inset;
+            -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .4) inset;
+            box-shadow: 0 0 1px rgba(0, 0, 0, .4) inset;
+            float: left;
+            text-align: center;
+            padding: 20px;
+            height: 270px;
+        }
+
+        article:nth-child(3) {
+            /*width: 100%;*/
+            margin-top: -270px;
+        }
+
+        article:nth-child(2) {
+            height: 540px;
+            padding-top: 150px;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <article>
+        <h1>Ulysses</h1>
+        <p>Soaring through the galaxies</p>
+        <img src="images/pic1.png" alt="image of Ulysses">
+    </article>
+    <article>
+        <h1>Dallas</h1>
+        <p>Rollin' down to Dallas</p>
+        <img src="images/pic2.png" alt="image of Dallas">
+    </article>
+    <article>
+        <h1>McKay</h1>
+        <p>McKay and his best friend</p>
+        <img src="images/pic3.png" alt="image of McKay">
+    </article>
+    <!--<article>-->
+        <!--<h1>Thunder</h1>-->
+        <!--<p>Thundercats on the move</p>-->
+        <!--<img src="images/pic4.png" alt="image of Thunder">-->
+    <!--</article>-->
+</section>
+</body>
+</html>
