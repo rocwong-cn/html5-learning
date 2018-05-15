@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>淘宝UED - 双飞翼布局</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-width: 950px;
+            margin: 50px;
+        }
+
+        #main {
+            background: #c0392b;
+            width: 100%;
+
+        }
+
+        #left {
+            background: #16a085;
+            width: 350px;
+            margin-left: -100%;
+        }
+
+        #right {
+            background: #f39c12;
+            width: 250px;
+            margin-left: -250px;
+        }
+
+        .col {
+            height: 500px;
+            float: left;
+            font-family: "Comic Sans MS";
+            font-size: 24px;
+            color: #ffffff;
+            padding: 30px 50px;
+            box-sizing: border-box;
+        }
+
+        .col img {
+            float: left;
+        }
+
+        #content {
+            margin: 0 250px 0 350px;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="main" class="col">
+        <div id="content">
+            <img src="images/filetype.png">
+            <p>Ramalinga as usual was walking into the Bhuvana Vijayam premises and the guards stopped him. He
+                questioned
+                why were they blocking the way. The soldiers told Ramalinga about the line and asked him to enter the
+                premises only after reciting the first three lines for the last line they recited to him. Ramalinga
+                boiled
+                and trembled with anger on those soldiers. </p>
+        </div>
+    </div>
+    <div id="left" class="col">
+        <img src="images/pizza.png">
+        <p>Long before guards could understand the meaning of the poem, Ramalinga walked stiff into the main court hall.
+            This state of affairs brought Ramalinga more close to Rayalu.</p>
+    </div>
+    <div id="right" class="col">
+        <img src="images/side.png">
+        <p>Rayalu clapped in all praise of Ramalinga for his ingenuity and wit filled narration. </p>
+    </div>
+</div>
+</body>
+</html>
