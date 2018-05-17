@@ -2,7 +2,7 @@
 [transition demo](http://htmlpreview.github.io/?https://github.com/rocwangv/html5-learning/blob/master/lesson8/index.html)
  | [animation demo1 - 会旋转的图标](http://htmlpreview.github.io/?https://github.com/rocwangv/html5-learning/blob/master/lesson8/animation.html)
  | [animation demo2 - 会移动的一排图标](http://htmlpreview.github.io/?https://github.com/rocwangv/html5-learning/blob/master/lesson8/animation2.html)
- | [animation demo3 - cubic bezier](http://htmlpreview.github.io/?https://github.com/rocwangv/html5-learning/blob/master/lesson8/animation2.html)
+ | [animation demo3 - cubic bezier](http://htmlpreview.github.io/?https://github.com/rocwangv/html5-learning/blob/master/lesson8/animation3.html)
 
 > 动画与特效
 
