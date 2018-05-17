@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson 8</title>
+    <style>
+        @font-face {
+            font-family: 'roc-font';
+            src: url('./font/flat-ui-icons-regular.ttf'), url('./font/flat-ui-icons-regular.eot'), url('./font/flat-ui-icons-regular.woff');
+        }
+
+        body {
+            background: #27ae60;
+        }
+
+        .close {
+            font-size: 0px; /* 让span中的文字不显示 */
+            cursor: pointer;
+            display: block;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            border-radius: 50%;
+            background: #ffffff;
+            color: #f39c12;
+            text-align: center;
+        }
+
+        .close::before {
+            font-family: 'roc-font';
+            content: '\e609';
+            speak: none;
+            font-size: 48px;
+            display: block;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        @-webkit-keyframes spin {
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        .close:hover::before {
+            /*-webkit-transition: spin 1s linear;*/
+            /*transition: spin 1s linear;*/
+
+            /*-webkit-transform: rotate(360deg);*/
+            /*transform: rotate(360deg);*/
+
+            -webkit-animation:spin 1s linear infinite alternate;
+            animation:spin 1s linear infinite alternate;
+        }
+    </style>
+</head>
+<body>
+<span class="close">Close</span>
+</body>
+</html>

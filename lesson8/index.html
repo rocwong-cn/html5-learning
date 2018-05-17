@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson 8</title>
+    <style>
+        @font-face {
+            font-family: 'roc-font';
+            src: url('./font/flat-ui-icons-regular.ttf'), url('./font/flat-ui-icons-regular.eot'), url('./font/flat-ui-icons-regular.woff');
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 16px;
+            background: yellowgreen;
+
+            -webkit-transition: color 0.5s linear, background .5s ease-in-out 1s;
+            transition: color 0.5s linear, background .5s ease-in-out 1s;
+
+            display: block;
+            width: 350px;
+            height: 60px;
+            line-height: 60px;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+            text-align: center;
+
+            box-sizing: border-box;
+            padding-left: 140px;
+            position: relative;
+        }
+
+        a::after {
+            content: '>';
+            position: absolute;
+            right: 85%;
+            transition: all .5s;
+        }
+
+        a:hover {
+            color: #000;
+            background: #ffffff;
+            padding-left: 20px;
+        }
+
+        a:hover::after {
+            right: 5%;
+        }
+    </style>
+</head>
+<body>
+<a href="#">This is a link.</a>
+</body>
+</html>
