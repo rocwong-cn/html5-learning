@@ -12,7 +12,8 @@
 
 [简单loading](http://htmlpreview.github.io/?https://github.com/rocwangv/html5-learning/blob/master/lesson9/loading.html)
  | [带有拖尾效果的loading](http://htmlpreview.github.io/?https://github.com/rocwangv/html5-learning/blob/master/lesson9/loading2.html)
- | [横向 dot loading ](http://htmlpreview.github.io/?https://github.com/rocwangv/html5-learning/blob/master/lesson9/loading2.html)
+ | [横向 dot loading ](http://htmlpreview.github.io/?https://github.com/rocwangv/html5-learning/blob/master/lesson9/loading-dot.html)
+ | [circle dot loading ](http://htmlpreview.github.io/?https://github.com/rocwangv/html5-learning/blob/master/lesson9/loading-round.html)
 
 ## Meta http-equiv属性
 
