@@ -14,6 +14,10 @@
  | [带有拖尾效果的loading](http://htmlpreview.github.io/?https://github.com/rocwangv/html5-learning/blob/master/lesson9/loading2.html)
  | [横向 dot loading ](http://htmlpreview.github.io/?https://github.com/rocwangv/html5-learning/blob/master/lesson9/loading-dot.html)
  | [circle dot loading ](http://htmlpreview.github.io/?https://github.com/rocwangv/html5-learning/blob/master/lesson9/loading-round.html)
+ 
+ * 翻书动效
+
+ | [book paging](http://htmlpreview.github.io/?https://github.com/rocwangv/html5-learning/blob/master/lesson9/book.html)
 
 ## Meta http-equiv属性
 
