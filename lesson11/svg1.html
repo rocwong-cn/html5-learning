@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>lesson 11 - svg</title>
+    <style type="text/css">
+        body {
+            background: #FFF;
+            margin: 10px;
+            font-family: sans-serif;
+        }
+
+        #sec {
+            background: url(bg.jpg);
+            width: 200px;
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #sec-description {
+            position: absolute;
+            color: #ffffff;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 0 30px;
+            z-index: 20;
+
+            -webkit-transform-style: preserve-3d;
+        }
+
+        h1 {
+            font-size: 45px;
+            -webkit-transform-style: preserve-3d;
+        }
+
+        p {
+            font-size: 14px;
+            -webkit-transform-style: preserve-3d;
+        }
+
+        #polygon {
+            fill: #34495e;
+        }
+
+        #sec:hover svg {
+            opacity: .9;
+        }
+
+        #sec svg {
+            transition: all .5s;
+        }
+
+        #sec:hover svg {
+            opacity: .9;
+            -webkit-transform: translateY(-30px);
+            -moz-transform: translateY(-30px);
+            -ms-transform: translateY(-30px);
+            -o-transform: translateY(-30px);
+            transform: translateY(-30px);
+        }
+    </style>
+</head>
+
+<body>
+<div id="sec">
+    <div id="sec-description">
+        <h1>Zerg</h1>
+        <p>Led by the cunning Queen of Blades, the zerg are set to unleash their alien horrors on the galaxy.</p>
+    </div>
+    <svg width="200px" height="500px">
+        <polygon points="0,0,200,0,200,350,0,250" fill="white" id="polygon"></polygon>
+    </svg>
+</div>
+</body>
+</html>

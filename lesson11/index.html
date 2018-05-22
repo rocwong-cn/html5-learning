@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson 11</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<canvas id="myCanvas" width="600" height="400"></canvas>
+<script>
+    var canvas = document.getElementById('myCanvas');
+    var context = canvas.getContext('2d');
+
+    //    context.stokeStyle = '#e74c3c';
+    //    context.lineWidth=5;
+    //    context.moveTo(100,100);
+    //    context.lineTo(200,200);
+    //    context.stroke()
+    var img = new Image();
+    img.src = 'bg.jpg';
+    img.onload = function () {
+        context.drawImage(img, 0, 0, 800, 500);
+        img = context.getImageData(0, 0, 800, 500);
+
+        var picLen = 800 * 500;
+        for (var i = 0; i < picLen * 4; i += 4) {
+            var myRed = img.data[i];
+            var myGreen = img.data[i + 1];
+            var myBlue = img.data[i + 2];
+            var myAlpha = img.data[i + 3];
+
+            var myGray = parseInt((myRed + myGreen + myBlue) / 3);
+            img.data[i] = myGray;
+            img.data[i + 1] = myGray;
+            img.data[i + 2] = myGray;
+            img.data[i + 3] = 128;
+        }
+        context.putImageData(img, 0, 0);
+    }
+</script>
+</body>
+</html>
